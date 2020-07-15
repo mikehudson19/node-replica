@@ -1,3 +1,5 @@
+@import "./variables"; 
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ body {
 }
 
 .header {
-  background: #333333;
+  background: $darkColor;
   display: flex;
   flex-direction: column;
   &__logo {
@@ -20,7 +22,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     list-style: none;
-    color: #cccccc;
+    color: $lightColor;
     text-transform: uppercase;
     margin: 0.5rem 2rem;
     font-size: 0.7rem;
@@ -28,5 +30,27 @@ body {
   }
   &__item {
     padding: 0.25rem;
+  }
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__info {
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  &__toplink {
+    color: $primaryColor;
+  }
+}
+
+.foot {
+  background: $darkColor;
+  color: $lightColor;
+  &__image {
+    width: 6rem;
   }
 }

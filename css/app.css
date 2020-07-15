@@ -42,4 +42,34 @@ body {
 .header__item {
   padding: 0.25rem;
 }
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.showcase__info {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.showcase__toplink {
+  color: #026e00;
+}
+
+.foot {
+  background: #333333;
+  color: #cccccc;
+}
+
+.foot__image {
+  width: 6rem;
+}
 /*# sourceMappingURL=app.css.map */
