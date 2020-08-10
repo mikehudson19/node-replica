@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   &__logo {
-    width: 6rem;
+    width: 7.5rem;
     align-self: center;
     padding-top: 1rem;
   }
@@ -25,32 +25,163 @@ body {
     color: $lightColor;
     text-transform: uppercase;
     margin: 0.5rem 2rem;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     text-align: center;
   }
   &__item {
-    padding: 0.25rem;
+    padding: 0.35rem;
+  }
+  &__icon {
+    &--up {
+      color: $lightColor;
+      margin: 0.45rem auto;
+      font-size: 1.5rem;
+    }
+    &--down {
+      display:none;
+      color: $lightColor;
+      margin: 0.45rem auto;
+      font-size: 1.5rem;
+    }
+  }
+  &__modalList { 
+    display: grid;
+    position: absolute;
+    top: 15.5rem;
+    background: $darkColor;
+    width: 100%;
+    grid-template-columns: 50% 50%; 
+    list-style: none;
+    color: $lightColor;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    text-align: center;
+    z-index: 50;
+  }
+  &__modalItem {
+    padding: 0.45rem;
+    &:hover {
+      cursor: pointer;
+      background: #43853d;
+      text-decoration: underline;
+    }
   }
 }
 
 .showcase {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   &__info {
-    margin: 1rem;
-    font-size: 1.2rem;
+    margin: 3.1rem 1.2rem 2rem 1.2rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
-  &__toplink {
+  &__innerlink {
     color: $primaryColor;
+    text-decoration: none;
+  }
+  &__blm {
+    background: $darkColor;
+    width: 80vw;
+    height: 2.9rem;
+  }
+  &__blm--text {
+    color: white;
+    background: black;
+    padding: 0.75rem 0.8rem;
+    position: absolute;
+    top: 24.15rem;
+    right: 5.5rem;
+    font-size: 1.6rem;
+  }
+  &__downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+    margin: 1.7rem 1rem 0.5rem 1rem; 
+    font-weight: 400;
+    font-size: 1.9rem;
+  }
+  &__btn {
+    background: $primaryColor;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    width: 69%;
+  }
+  &__version {
+    font-size: 1.75rem;
+    padding-bottom: 0.7rem;
+  }
+  &__subtext {
+    font-size: 1.05rem;
+  }
+  &__otherlinks {
+    margin: 0.75rem 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: $primaryColor;
+    font-size: 0.92rem;
+  }
+  &__final {
+    margin: 0.9rem 1.8rem 2rem 1.8rem;
+    font-size: 1.25rem;
   }
 }
 
 .foot {
   background: $darkColor;
   color: $lightColor;
+  padding-bottom: 1.8rem;
+  &__first {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
   &__image {
-    width: 6rem;
+    width: 7.5rem;
+    margin: 0.85rem;
+  }
+  &__links {
+    padding-left: 0.9rem;
+  }
+  &__link {
+    font-size: 0.83rem;
+  }
+  &__text {
+    margin: 1rem 0.9rem;
+    font-size: 0.85rem;
+  }
+  &__text--white {
+    color: white;
+  }
+  &__text--first {
+    margin-bottom: 0.8rem;
+  }
+  &__gratitude {
+    display: flex;
+    width: 18.5rem;
+    margin: 1rem auto 0 auto;
+    padding: 1.5rem 1rem;
+    border: 1px white solid;
+  }
+  &__avatar {
+    width: 2.8rem;
+    height: 2.8rem;
+    padding-right: 1rem;
+  }
+  &__thanks {
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+  }
+  &__thanks--white {
+    color: white;
   }
 }

@@ -19,7 +19,7 @@ body {
 }
 
 .header__logo {
-  width: 6rem;
+  width: 7.5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -35,12 +35,52 @@ body {
   color: #cccccc;
   text-transform: uppercase;
   margin: 0.5rem 2rem;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   text-align: center;
 }
 
 .header__item {
-  padding: 0.25rem;
+  padding: 0.35rem;
+}
+
+.header__icon--up {
+  color: #cccccc;
+  margin: 0.45rem auto;
+  font-size: 1.5rem;
+}
+
+.header__icon--down {
+  display: none;
+  color: #cccccc;
+  margin: 0.45rem auto;
+  font-size: 1.5rem;
+}
+
+.header__modalList {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  top: 15.5rem;
+  background: #333333;
+  width: 100%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  list-style: none;
+  color: #cccccc;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  text-align: center;
+  z-index: 50;
+}
+
+.header__modalItem {
+  padding: 0.45rem;
+}
+
+.header__modalItem:hover {
+  cursor: pointer;
+  background: #43853d;
+  text-decoration: underline;
 }
 
 .showcase {
@@ -51,25 +91,164 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 .showcase__info {
-  margin: 1rem;
-  font-size: 1.2rem;
+  margin: 3.1rem 1.2rem 2rem 1.2rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
-.showcase__toplink {
+.showcase__innerlink {
   color: #026e00;
+  text-decoration: none;
+}
+
+.showcase__blm {
+  background: #333333;
+  width: 80vw;
+  height: 2.9rem;
+}
+
+.showcase__blm--text {
+  color: white;
+  background: black;
+  padding: 0.75rem 0.8rem;
+  position: absolute;
+  top: 24.15rem;
+  right: 5.5rem;
+  font-size: 1.6rem;
+}
+
+.showcase__downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase__heading {
+  margin: 1.7rem 1rem 0.5rem 1rem;
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.showcase__btn {
+  background: #026e00;
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 0;
+  width: 69%;
+}
+
+.showcase__version {
+  font-size: 1.75rem;
+  padding-bottom: 0.7rem;
+}
+
+.showcase__subtext {
+  font-size: 1.05rem;
+}
+
+.showcase__otherlinks {
+  margin: 0.75rem 0;
+}
+
+.showcase__link {
+  text-decoration: none;
+  color: #026e00;
+  font-size: 0.92rem;
+}
+
+.showcase__final {
+  margin: 0.9rem 1.8rem 2rem 1.8rem;
+  font-size: 1.25rem;
 }
 
 .foot {
   background: #333333;
   color: #cccccc;
+  padding-bottom: 1.8rem;
+}
+
+.foot__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .foot__image {
-  width: 6rem;
+  width: 7.5rem;
+  margin: 0.85rem;
+}
+
+.foot__links {
+  padding-left: 0.9rem;
+}
+
+.foot__link {
+  font-size: 0.83rem;
+}
+
+.foot__text {
+  margin: 1rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.foot__text--white {
+  color: white;
+}
+
+.foot__text--first {
+  margin-bottom: 0.8rem;
+}
+
+.foot__gratitude {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18.5rem;
+  margin: 1rem auto 0 auto;
+  padding: 1.5rem 1rem;
+  border: 1px white solid;
+}
+
+.foot__avatar {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding-right: 1rem;
+}
+
+.foot__thanks {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+}
+
+.foot__thanks--white {
+  color: white;
 }
 /*# sourceMappingURL=app.css.map */

@@ -1,71 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/app.css">
-  <title>Node.js</title>
-</head>
-<body>
-  <section class="header">
-    <img class="header__logo" src="./images/logo.svg" alt="">
-    <nav class="header__nav">
-      <ul class="header__ul">
-        <li class="header__item">Home</li>
-        <li class="header__item">About</li>
-        <li class="header__item">Downloads</li>
-        <li class="header__item">Docs</li>
-        <li class="header__item">Get Involved</li>
-        <li class="header__item">Security</li>
-        <li class="header__item">Certification</li>
-        <li class="header__item">News</li>
-      </ul>
-    </nav>
-    <div class="header__languages"></div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f97d0e5ba4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/app.css" />
+    <title>Node.js</title>
+  </head>
+  <body>
+    <section class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="" />
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__item">Home</li>
+          <li class="header__item">About</li>
+          <li class="header__item">Downloads</li>
+          <li class="header__item">Docs</li>
+          <li class="header__item">Get Involved</li>
+          <li class="header__item">Security</li>
+          <li class="header__item">Certification</li>
+          <li class="header__item">News</li>
+        </ul>
+      </nav>
 
-  <section class="showcase">
-    <h1 class="showcase__info">Node.js&reg is a JavaScript runtime built on <a class="showcase__toplink">Chrome's V8 JavaScript engine</a>.</h1>
-    <div class="showcase__blm">
-      <span class="showcase__blm--text">#BlackLivesMatter</span>
-    </div>
-    <div class="showcase__downloads">
-      <h1 class="showcase__heading">Download for macOS (x64)</h1>
-      <a class="showcase__btn" href="#"><span class="showcase__version">12.18.2 LTS</span><span class="showcase__subtext">Recommended For Most Users</span></a>
-      <span>
-        <a class="showcase__link" href="">Other Downloads</a>
-        <a class="showcase__link" href="">Changelog</a>
-        <a class="showcase__link" href="">API Docs</a>
-      </span>
-      <a class="showcase__btn" href="#"><span class="showcase__version">14.5.0 Current</span><span class="showcase__subtext">Latest Features</span></a>
-      <span>
-        <a class="showcase__link" href="">Other Downloads</a>
-        <a class="showcase__link" href="">Changelog</a>
-        <a class="showcase__link" href="">API Docs</a>
-      </span>
-    </div>
-    <div class="showcase__final"></div>
-  </section>
+      <i class="header__icon--up fas fa-sort-down"></i>
+      <i class="header__icon--down fas fa-sort-up"></i>
+      <div class="header__modalContainer"></div>
+    </section>
 
-  <footer class="foot">
-    <div class="foot__first">
-      <img class="foot__image" src="./images/openjs_foundation-logo.svg" alt="">
-      <div>
-        <span class="foot__link">Report Node.js issue</span>
-        <span class="foot__link">Report website issue</span>
-        <span class="foot__link">Get Help</span>
+    <section class="showcase">
+      <h1 class="showcase__info">
+        Node.js&reg is a JavaScript runtime built on
+        <a class="showcase__innerlink" href="#">Chrome's V8 JavaScript engine</a
+        >.
+      </h1>
+      <div class="showcase__blm">
+        <span class="showcase__blm--text">#BlackLivesMatter</span>
       </div>
-    </div>
-    <div class="foot__second">
-      <p class="foot__text">&copy OpenJS Foundation. All Rights Reserved. Portions of this site originally &copy Joyent.</p>
-      <p class="foot__text">Node.js Project Licensing Information.</p>
-    </div>
-    <article class="foot__gratitude">
-      <img class="foot__avatar" src="" alt="">
-      <p class="foot__thanks"><em>Thank you</em> sivaprs <em>for being</em> a Node.js contributor 5 contributions.</p>
-    </article>
-  </footer>
-</body>
-</html>
+      <div class="showcase__downloads">
+        <h1 class="showcase__heading">Download for macOS (x64)</h1>
+        <a class="showcase__btn" href="#">
+          <span class="showcase__version">12.18.3 LTS</span>
+          <span class="showcase__subtext">Recommended For Most Users</span>
+        </a>
+        <span class="showcase__otherlinks">
+          <a class="showcase__link" href="">Other Downloads |</a>
+          <a class="showcase__link" href="">Changelog |</a>
+          <a class="showcase__link" href="">API Docs</a>
+        </span>
+        <a class="showcase__btn" href="#"
+          ><span class="showcase__version">14.7.0 Current</span
+          ><span class="showcase__subtext">Latest Features</span></a
+        >
+        <span class="showcase__otherlinks">
+          <a class="showcase__link" href="">Other Downloads |</a>
+          <a class="showcase__link" href="">Changelog |</a>
+          <a class="showcase__link" href="">API Docs</a>
+        </span>
+      </div>
+      <p class="showcase__final">
+        Or have a look at the
+        <a class="showcase__innerlink" href="#"
+          >Long Term Support (LTS) schedule.</a
+        >
+      </p>
+    </section>
 
+    <footer class="foot">
+      <div class="foot__first">
+        <img
+          class="foot__image"
+          src="./images/openjs_foundation-logo.svg"
+          alt=""
+        />
+        <div class="foot__links">
+          <span class="foot__link">Report Node.js issue |</span>
+          <span class="foot__link">Report website issue |</span>
+          <span class="foot__link">Get Help</span>
+        </div>
+      </div>
+      <div class="foot__second">
+        <p class="foot__text foot__text--first foot__text--white">
+          &copy OpenJS Foundation. All Rights Reserved. Portions of this site
+          originally &copy Joyent.
+        </p>
+        <p class="foot__text">
+          <span class="foot__text--white"
+            >Node.js is a trademark of Joyent, Inc. and is used with its
+            permission.</span
+          >
+       
+          <span class="foot__text--white">Please review the</span> Trademark
+          List <span class="foot__text--white">and</span> Trademark Guidelines
+          <span class="foot__text--white">of the</span> OpenJS foundation.
+        </p>
+        <p class="foot__text">Node.js Project Licensing Information.</p>
+      </div>
+      <article class="foot__gratitude">
+        <img class="foot__avatar" src="https://avatars3.githubusercontent.com/u/2227152?v=4&s=80" alt="" />
+        <p class="foot__thanks">
+          <span class="foot__thanks--white">Thank you</span> bradleythughes
+          <span class="foot__thanks--white">for being a</span>  Node.js
+          contributor 4 contributions.
+        </p>
+      </article>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
