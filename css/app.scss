@@ -31,14 +31,17 @@ body {
   &__item {
     padding: 0.35rem;
   }
+  &__pipe {
+    display: none;
+  }
   &__icon {
     &--up {
+      display:none;
       color: $lightColor;
       margin: 0.45rem auto;
       font-size: 1.5rem;
     }
     &--down {
-      display:none;
       color: $lightColor;
       margin: 0.45rem auto;
       font-size: 1.5rem;
@@ -185,3 +188,9 @@ body {
     color: white;
   }
 }
+
+
+// menu - 480
+// footer - 700
+// showcase - 575
+@import './small';

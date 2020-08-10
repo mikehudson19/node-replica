@@ -43,14 +43,18 @@ body {
   padding: 0.35rem;
 }
 
+.header__pipe {
+  display: none;
+}
+
 .header__icon--up {
+  display: none;
   color: #cccccc;
   margin: 0.45rem auto;
   font-size: 1.5rem;
 }
 
 .header__icon--down {
-  display: none;
   color: #cccccc;
   margin: 0.45rem auto;
   font-size: 1.5rem;
@@ -250,5 +254,40 @@ body {
 
 .foot__thanks--white {
   color: white;
+}
+
+@media (min-width: 480px) {
+  .header {
+    width: 100vw;
+  }
+  .header__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__pipe {
+    display: inline;
+    padding-left: 14px;
+  }
+  .header__icon--down {
+    margin: 1rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .header__icon--up {
+    margin: 1rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .header__modalList {
+    top: 11.8rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

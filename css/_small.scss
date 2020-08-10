@@ -1,0 +1,25 @@
+@media (min-width: 480px) {
+  .header {
+    width: 100vw;
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__pipe {
+      display: inline;
+      padding-left: 14px;
+    }
+    &__icon--down {
+      margin: 1rem;
+      align-self: flex-end;
+    }
+    &__icon--up {
+      margin: 1rem;
+      align-self: flex-end;
+    }
+    &__modalList {
+      top: 11.8rem;
+    }
+  }
+}
