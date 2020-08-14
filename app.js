@@ -1,7 +1,7 @@
 const arrowUp = document.querySelector('.header__icon--up');
 const arrowDown = document.querySelector('.header__icon--down');
 
-arrowUp.addEventListener('click', (e) => {
+arrowDown.addEventListener('click', (e) => {
   const modal = document.createElement('div');
   modal.className = 'header__modal';
   modal.innerHTML = `
@@ -27,16 +27,16 @@ arrowUp.addEventListener('click', (e) => {
   `
   const modalContainer = document.querySelector('.header__modalContainer');
   modalContainer.appendChild(modal);
-  arrowUp.style.display = 'none';
-  arrowDown.style.display = 'block';
+  arrowDown.style.display = 'none';
+  arrowUp.style.display = 'block';
 })
 
 document.addEventListener('click', (e) => {
-  const arrowDownClass = 'header__icon--down fas fa-sort-up';
-  if (e.target.className === arrowDownClass) {
+  const arrowUpClass = 'header__icon--up fas fa-sort-up';
+  if (e.target.className === arrowUpClass) {
     document.querySelector('.header__modal').remove();
-    arrowDown.style.display = 'none';
-    arrowUp.style.display = 'block';
+    arrowUp.style.display = 'none';
+    arrowDown.style.display = 'block';
   }
 })
 

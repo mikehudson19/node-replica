@@ -19,19 +19,20 @@
       <img class="header__logo" src="./images/logo.svg" alt="" />
       <nav class="header__nav">
         <ul class="header__ul">
-          <li class="header__item">Home</li>
-          <li class="header__item">About</li>
-          <li class="header__item">Downloads</li>
-          <li class="header__item">Docs</li>
-          <li class="header__item">Get Involved</li>
-          <li class="header__item">Security</li>
-          <li class="header__item">Certification</li>
+          <li class="header__item">Home<span class="header__pipe">|</span></li>
+          <li class="header__item">About<span class="header__pipe">|</span></li>
+          <li class="header__item">Downloads<span class="header__pipe">|</span></li>
+          <li class="header__item">Docs<span class="header__pipe">|</span></li>
+          <li class="header__item">Get Involved<span class="header__pipe">|</span></li>
+          <li class="header__item">Security<span class="header__pipe">|</span></li>
+          <li class="header__item">Certification<span class="header__pipe">|</span></li>
           <li class="header__item">News</li>
         </ul>
+        <i class="header__icon--up fas fa-sort-up"></i>
+        <i class="header__icon--down fas fa-sort-down"></i>
       </nav>
 
-      <i class="header__icon--up fas fa-sort-down"></i>
-      <i class="header__icon--down fas fa-sort-up"></i>
+      
       <div class="header__modalContainer"></div>
     </section>
 
@@ -46,24 +47,29 @@
       </div>
       <div class="showcase__downloads">
         <h1 class="showcase__heading">Download for macOS (x64)</h1>
-        <a class="showcase__btn" href="#">
-          <span class="showcase__version">12.18.3 LTS</span>
-          <span class="showcase__subtext">Recommended For Most Users</span>
-        </a>
-        <span class="showcase__otherlinks">
-          <a class="showcase__link" href="">Other Downloads |</a>
-          <a class="showcase__link" href="">Changelog |</a>
-          <a class="showcase__link" href="">API Docs</a>
-        </span>
-        <a class="showcase__btn" href="#"
-          ><span class="showcase__version">14.7.0 Current</span
-          ><span class="showcase__subtext">Latest Features</span></a
-        >
-        <span class="showcase__otherlinks">
-          <a class="showcase__link" href="">Other Downloads |</a>
-          <a class="showcase__link" href="">Changelog |</a>
-          <a class="showcase__link" href="">API Docs</a>
-        </span>
+        <div class="showcase__main">
+        <div class="showcase__version">
+          <a class="showcase__btn" href="#">
+            <span class="showcase__version">12.18.3 LTS</span>
+            <span class="showcase__subtext">Recommended For Most Users</span>
+          </a>
+          <span class="showcase__otherlinks">
+            <a class="showcase__link" href="">Other Downloads |</a>
+            <a class="showcase__link" href="">Changelog |</a>
+            <a class="showcase__link" href="">API Docs</a>
+          </span>
+        </div>
+        <div class="showcase__version">
+          <a class="showcase__btn" href="#"
+            ><span class="showcase__version">14.7.0 Current</span
+            ><span class="showcase__subtext">Latest Features</span></a>
+          <span class="showcase__otherlinks">
+            <a class="showcase__link" href="">Other Downloads |</a>
+            <a class="showcase__link" href="">Changelog |</a>
+            <a class="showcase__link" href="">API Docs</a>
+          </span>
+        </div>
+      </div>
       </div>
       <p class="showcase__final">
         Or have a look at the

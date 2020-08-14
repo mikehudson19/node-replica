@@ -13,10 +13,16 @@ body {
   background: $darkColor;
   display: flex;
   flex-direction: column;
+  align-items: center;
   &__logo {
     width: 7.5rem;
     align-self: center;
     padding-top: 1rem;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__ul {
     display: grid;
@@ -38,13 +44,12 @@ body {
     &--up {
       display:none;
       color: $lightColor;
-      margin: 0.45rem auto;
       font-size: 1.5rem;
     }
     &--down {
       color: $lightColor;
-      margin: 0.45rem auto;
       font-size: 1.5rem;
+      padding-bottom: 0.8rem;
     }
   }
   &__modalList { 
@@ -86,6 +91,10 @@ body {
     text-decoration: none;
   }
   &__blm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background: $darkColor;
     width: 80vw;
     height: 2.9rem;
@@ -93,10 +102,7 @@ body {
   &__blm--text {
     color: white;
     background: black;
-    padding: 0.75rem 0.8rem;
-    position: absolute;
-    top: 24.15rem;
-    right: 5.5rem;
+    padding: 1rem 0.8rem;
     font-size: 1.6rem;
   }
   &__downloads {
@@ -116,7 +122,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0;
-    width: 69%;
+    width: 98%;
   }
   &__version {
     font-size: 1.75rem;
