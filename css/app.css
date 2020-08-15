@@ -40,6 +40,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
 }
 
 .header__ul {
@@ -53,6 +54,7 @@ body {
   margin: 0.5rem 2rem;
   font-size: 0.85rem;
   text-align: center;
+  width: 100%;
 }
 
 .header__item {
@@ -293,9 +295,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .header__ul {
     display: -webkit-box;
@@ -305,8 +304,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 0.9rem;
   }
   .header__pipe {
