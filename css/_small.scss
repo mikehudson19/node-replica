@@ -24,12 +24,13 @@
       align-self: center;
       justify-self: flex-end;
     }
+
     &__modalList {
       display: flex;
       flex-direction: column;
       top: 8.45rem;
       right: 0;
-      width: 18%;
+      width: 11rem;
       height: 15rem;
       overflow: hidden;
       overflow-y: scroll;
@@ -44,6 +45,7 @@
     &__version {
       margin: 0 0.75rem;
     }
+   
   }
 
   .foot {
